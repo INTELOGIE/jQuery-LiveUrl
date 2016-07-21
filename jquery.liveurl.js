@@ -33,7 +33,7 @@
                findDescription  : true,
                matchNoData      : true,
                multipleImages   : true,
-               defaultProtocol  : 'https://',
+               defaultProtocol  : 'http://',
                minWidth         : 100,
                minHeight        : 32,
                logoWord         : 'logo',
@@ -313,10 +313,14 @@
                     
                     
                     core.addImages();
-                    core.current.one('clear', function() 
+                    core.current.on('clear', function() 
                     {
                        core.init();
                     });     
+                    
+                    core.preview = false;
+                    preview.images = [];
+                    
                 };
                 
                 core.addLoader = function()
