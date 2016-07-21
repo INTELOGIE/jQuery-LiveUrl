@@ -33,7 +33,7 @@
                findDescription  : true,
                matchNoData      : true,
                multipleImages   : true,
-               defaultProtocol  : 'http://',
+               defaultProtocol  : 'https://',
                minWidth         : 100,
                minHeight        : 32,
                logoWord         : 'logo',
@@ -434,7 +434,7 @@
     jQuery.yql = function yql(query, error, success) 
     {
         var yql = {
-            path: 'http://query.yahooapis.com/v1/public/yql?q=',
+            path: 'https://query.yahooapis.com/v1/public/yql?q=',
             query: encodeURIComponent(query)
         };
         
