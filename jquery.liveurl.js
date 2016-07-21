@@ -367,7 +367,8 @@
                                  image = host + image; 
                             else image = host + $.urlHelper.stripFile(pLink.path) + '/' + image;
                         }
-                        
+                        o.addImage(image);
+                        /*
                         core.getImage(image, function(img) 
                         {
                             if (img.width  >= o.minWidth  && 
@@ -381,6 +382,7 @@
                                 
                             }
                         });
+                        */
                     }
 
                 };
